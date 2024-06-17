@@ -11,6 +11,8 @@ import gudhi.wasserstein
 import gudhi.hera
 import ot
 
+INT_MAX = 2147483647
+
 def persistence(array, dimension=None):
   height, width = array.shape
   cubeComplex = gudhi.CubicalComplex(
@@ -65,10 +67,10 @@ def stitch(PDs, ts):
 
     return vines
 
-def vineyard(f, g, nt=100, verbose=False):
+def vineyard(f, g, nt=100, dim=0, verbose=False):
     ts = np.linspace(0, 1, nt)
     hs = np.array([t*f+(1-t)*g for t in ts]) 
-    PD0 = [persistence(h, dimension=1) for h in hs]
+    PD0 = [persistence(h, dimension=dim) for h in hs]
     vines = stitch(PD0, ts)
 
     poss = vines
@@ -85,9 +87,11 @@ def vineyard(f, g, nt=100, verbose=False):
                 repl.append(PD0[vines[i][0]+j][x])
     
         poss[i][2] = np.array(repl)
-
+    
     res = [[[ts[p[0]+np.arange(len(p[2]))][i], *x] for i,x in enumerate(p[2])] for p in poss]
-    mx = np.max([np.max(p[2]) for p in poss if np.inf not in p[2]])
+
+    mxs = [np.max(p[2]) for p in poss if np.inf not in p[2]]
+    mx = np.max(mxs) if len(mxs) > 0 else INT_MAX
 
     if verbose:
         gudhi.plot_persistence_diagram(persistence(hs[len(ts)-1]))
@@ -98,8 +102,7 @@ def vineyard(f, g, nt=100, verbose=False):
         gos = []
         
         for vine in res:
-            vine = np.array(vine)
-            # print(vine)
+            vine = np.minimum(np.array(vine), INT_MAX) # INTMAX for INF
             gos.append(go.Scatter3d(x=vine[:,0], y=vine[:,1], z=vine[:,2], marker=dict(
                 size=2,
             ),
@@ -119,9 +122,10 @@ def vineyard(f, g, nt=100, verbose=False):
             height=700,
             scene=dict(
               xaxis_title='T (homotopy)',
-              yaxis_title='Birth',
-              zaxis_title='Death'
-          )
+            zaxis=dict(range=[0,mx], title="Death"),
+            yaxis=dict(range=[0,mx], title="Birth")
+          ),
+
         )
         
         fig.show()
@@ -130,9 +134,11 @@ def vineyard(f, g, nt=100, verbose=False):
 
 def vdist(vines, fD, fL): # diag weight func, length weight func
     V = 0
-    for vine in vines:
-        vine = np.array(vine)
+
+    for i in range(len(vines)):
+        vines[i] = np.minimum(np.array(vines[i]), INT_MAX)
     
+    for vine in vines:    
         v, L = 0, 0
         for i in range(1, len(vine)):
             l = np.linalg.norm(vine[i][1:]-vine[i-1][1:])
