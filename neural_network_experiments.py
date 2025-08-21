@@ -21,6 +21,7 @@ import json, random, warnings, os
 from pathlib import Path
 from datetime import datetime
 from typing import List, Dict, Any
+from tqdm import tqdm
 
 import numpy as np
 import torch, torch.nn as nn
@@ -52,16 +53,16 @@ def onehot(labels: List[int]) -> np.ndarray:
 # ────────────────────────────  dataset  ─────────────────────────── #
 class BlobAndCirclesDataset(Dataset):
     """100 Gaussian blob points + 100 inner-circle points."""
-    def __init__(self, seed: int = 2024):
+    def __init__(self, npoints = 100, seed: int = 2024):
         np.random.seed(seed)
-        X0 = np.random.normal(scale=0.10, size=(100, 2))   # class 0
-        y0 = [0] * 100
+        X0 = np.random.normal(scale=0.10, size=(npoints, 2))   # class 0
+        y0 = [0] * npoints
 
         X1 = make_circles(
-            n_samples=200, noise=0.05, factor=0.5,
+            n_samples=2*npoints, noise=0.05, factor=0.5,
             shuffle=False, random_state=seed
-        )[0][100:]
-        y1 = [1] * 100
+        )[0][npoints:]
+        y1 = [1] * npoints
 
         self.X = np.vstack([X0, X1]).astype(np.float32)
         self.y = onehot(y0 + y1)
@@ -110,16 +111,17 @@ class Network(nn.Module):
 
 # ────────────────────────  global params  ─────────────────────── #
 DEVICE            = "cuda" if torch.cuda.is_available() else "cpu"
-TRIALS_PER_CONFIG = 50
+TRIALS_PER_CONFIG = 100
 EPOCHS            = 100
 SNAP_INTERVAL     = 1
 GRID_RES          = 300
 SEED              = 2024
 
 NEURONS_PER_LAYER = 8
-DEPTH_GRID        = [1, 3, 5, 10]            # Exp 1
-LR_GRID           = []   # Exp 2
-BATCH_GRID        = [8, 16, 32, 64, 128]  # Exp 3
+DEPTH_GRID        = [1, 3, 5, 7]            # Exp 1
+LR_GRID           = [0.005, 0.01, 0.05, 0.1]   # Exp 2
+BATCH_GRID        = [8, 16, 32, 64]  # Exp 3
+SIZE_GRID         = [0.2, 0.4, 0.6, 0.8, 1.0]  # Exp 4
 
 ARCH_FIXED        = [NEURONS_PER_LAYER] * 3    # used in Exp 2 & 3
 LR_FIXED          = 1e-2                      # used in Exp 1 & 3
@@ -182,7 +184,7 @@ def run_trial(
     snapshot()
 
     # ------------- training loop ------------- #
-    for epoch in range(1, EPOCHS + 1):
+    for epoch in tqdm(range(1, EPOCHS + 1)):
         # --- training phase ---
         model.train()
         tr_loss, tr_correct, n_tr = 0.0, 0, 0
@@ -234,11 +236,11 @@ def run_trial(
 
 
 # ────────────────────  helper: run trials & save  ──────────────────── #
-def collect_trials(hidden_layers, lr, batch_size, cfg_tag):
+def collect_trials(hidden_layers, lr, batch_size, cfg_tag, size=1.0):
     base_dir = RESULTS_DIR / cfg_tag
     base_dir.mkdir(parents=True, exist_ok=True)
 
-    full_ds = BlobAndCirclesDataset()
+    full_ds = BlobAndCirclesDataset(npoints = int(size*100))
     labels  = np.argmax(full_ds.y, axis=1)
     splitter = StratifiedShuffleSplit(n_splits=TRIALS_PER_CONFIG,
                                       test_size=0.20,
@@ -246,6 +248,7 @@ def collect_trials(hidden_layers, lr, batch_size, cfg_tag):
 
     trials = []
     for trial_idx, (tr_idx, val_idx) in enumerate(splitter.split(full_ds.X, labels)):
+        print(trial_idx)
         set_all_seeds(SEED + 7000 + trial_idx)
         tr_ds  = torch.utils.data.Subset(full_ds, tr_idx.tolist())
         val_ds = torch.utils.data.Subset(full_ds, val_idx.tolist())
@@ -307,15 +310,25 @@ def experiment_batchsize():
         save_json(cfg, RESULTS_DIR / f"{tag}.json")
         print(f"   saved → {tag}.json + grids")
 
+def experiment_datasize():
+    print("\n=== Experiment 4 : data-size sweep ===")
+    for size in SIZE_GRID:
+        tag = f"size_{size:.1f}"
+        print(f" → {tag}")
+        cfg = collect_trials(ARCH_FIXED, lr=LR_FIXED, batch_size=64, cfg_tag=tag, size=size)
+        save_json(cfg, RESULTS_DIR / f"{tag}.json")
+        print(f"   saved → {tag}.json + grids")
+
 
 # ────────────────────────────────  main  ──────────────────────────────── #
 if __name__ == "__main__":
     start = datetime.now()
     set_all_seeds(SEED)
 
-    experiment_depth()
-    experiment_lr()
-    experiment_batchsize()
+    #experiment_depth()
+    #experiment_lr()
+    #experiment_batchsize()
+    experiment_datasize()
 
     dt = datetime.now() - start
     print(f"\nAll experiments finished in {dt}.  Results in → {RESULTS_DIR.resolve()}")
