@@ -1,0 +1,501 @@
+,NAME,POP2010,ST
+93,New York,8175133,NY
+384,Los Angeles,3792621,CA
+213,Chicago,2695598,IL
+13,Houston,2099451,TX
+105,Philadelphia,1526006,PA
+359,Phoenix,1445632,AZ
+5,San Antonio,1327407,TX
+324,San Diego,1307402,CA
+264,Dallas,1197816,TX
+499,Honolulu,953207,HI
+460,San Jose,945942,CA
+30,Jacksonville,821784,FL
+190,Indianapolis,820445,IN
+435,San Francisco,805235,CA
+7,Austin,790390,TX
+158,Columbus,787033,OH
+280,Fort Worth,741206,TX
+145,Charlotte,731424,NC
+168,Detroit,713777,MI
+291,El Paso,649121,TX
+229,Memphis,646889,TN
+121,Baltimore,620961,MD
+79,Boston,617594,MA
+469,Seattle,608660,WA
+120,Washington,601723,DC
+200,Nashville,601222,TN
+298,Denver,600158,CO
+193,Louisville,597337,KY
+210,Milwaukee,594833,WI
+477,Portland,583776,OR
+321,Las Vegas,583756,NV
+276,Oklahoma City,579999,OK
+316,Albuquerque,545852,NM
+313,Tucson,520116,AZ
+378,Fresno,494665,CA
+455,Sacramento,466488,CA
+393,Long Beach,462257,CA
+252,Kansas City,459787,MO
+312,Mesa,439041,AZ
+111,Virginia Beach,437994,VA
+179,Atlanta,420003,GA
+296,Colorado Springs,416427,CO
+259,Omaha,408958,NE
+134,Raleigh,403892,NC
+53,Miami,399457,FL
+150,Cleveland,396815,OH
+262,Tulsa,391906,OK
+437,Oakland,390724,CA
+488,Minneapolis,382578,MN
+273,Wichita,382368,KS
+279,Arlington,365438,TX
+380,Bakersfield,347483,CA
+26,New Orleans,343829,LA
+418,Anaheim,336265,CA
+38,Tampa,335709,FL
+308,Aurora,325078,CO
+411,Santa Ana,324528,CA
+233,St. Louis,319294,MO
+141,Pittsburgh,305704,PA
+20,Corpus Christi,305215,TX
+341,Riverside,303871,CA
+182,Cincinnati,296943,OH
+175,Lexington,295803,KY
+498,Anchorage,291826,AK
+450,Stockton,291707,CA
+171,Toledo,287208,OH
+495,St. Paul,285068,MN
+87,Newark,277140,NJ
+128,Greensboro,269666,NC
+133,Buffalo,261310,NY
+268,Plano,259841,TX
+258,Lincoln,258379,NE
+322,Henderson,257729,NV
+183,Fort Wayne,253691,IN
+91,Jersey City,247597,NJ
+37,St. Petersburg,244769,FL
+326,Chula Vista,243916,CA
+112,Norfolk,242803,VA
+34,Orlando,238300,FL
+364,Chandler,236123,AZ
+3,Laredo,236091,TX
+225,Madison,233209,WI
+138,Winston-Salem,229617,NC
+286,Lubbock,229573,TX
+24,Baton Rouge,229493,LA
+129,Durham,228330,NC
+267,Garland,226876,TX
+357,Glendale,226721,AZ
+424,Reno,225221,NV
+50,Hialeah,224669,FL
+108,Chesapeake,222209,VA
+360,Scottsdale,217385,AZ
+320,North Las Vegas,216961,NV
+282,Irving,216290,TX
+441,Fremont,214089,CA
+414,Irvine,212375,CA
+198,Birmingham,212237,AL
+126,Rochester,210565,NY
+336,San Bernardino,209924,CA
+481,Spokane,208916,WA
+311,Gilbert,208453,AZ
+195,Montgomery,205764,AL
+368,Boise City,205671,ID
+125,Richmond,204214,VA
+249,Des Moines,203433,IA
+419,Modesto,201165,CA
+131,Fayetteville,200564,NC
+243,Shreveport,199311,LA
+151,Akron,199110,OH
+468,Tacoma,198397,WA
+216,Aurora,197899,IL
+373,Oxnard,197899,CA
+340,Fontana,196069,CA
+90,Yonkers,195976,NY
+155,Augusta,195844,GA
+28,Mobile,195111,AL
+240,Little Rock,193524,AR
+342,Moreno Valley,193365,CA
+386,Glendale,191719,CA
+285,Amarillo,190695,TX
+390,Huntington Beach,189992,CA
+180,Columbus,189885,GA
+187,Grand Rapids,188040,MI
+356,Salt Lake City,186440,UT
+29,Tallahassee,181376,FL
+72,Worcester,181045,MA
+118,Newport News,180719,VA
+199,Huntsville,180105,AL
+160,Knoxville,178874,TN
+74,Providence,178042,RI
+370,Santa Clarita,176320,CA
+278,Grand Prairie,175396,TX
+9,Brownsville,175023,TX
+230,Jackson,173514,MS
+254,Overland Park,173372,KS
+415,Garden Grove,170883,CA
+428,Santa Rosa,167815,CA
+185,Chattanooga,167674,TN
+345,Oceanside,167086,CA
+58,Fort Lauderdale,165521,FL
+339,Rancho Cucamonga,165269,CA
+43,Port St. Lucie,164603,FL
+328,Ontario,163924,CA
+478,Vancouver,161791,WA
+365,Tempe,161719,AZ
+239,Springfield,159498,MO
+382,Lancaster,156633,CA
+464,Eugene,156185,OR
+47,Pembroke Pines,154750,FL
+463,Salem,154637,OR
+40,Cape Coral,154305,FL
+358,Peoria,154065,AZ
+272,Sioux Falls,153888,SD
+70,Springfield,153060,MA
+452,Elk Grove,153015,CA
+226,Rockford,152871,IL
+381,Palmdale,152750,CA
+332,Corona,152374,CA
+449,Salinas,150441,CA
+408,Pomona,149058,CA
+18,Pasadena,149043,TX
+223,Joliet,147433,IL
+89,Paterson,146199,NJ
+251,Kansas City,145786,KS
+396,Torrance,145438,CA
+113,Syracuse,145170,NY
+96,Bridgeport,144229,CT
+446,Hayward,144186,CA
+300,Fort Collins,143986,CO
+348,Escondido,143911,CA
+294,Lakewood,142980,CO
+214,Naperville,141853,IL
+184,Dayton,141527,OH
+45,Hollywood,140768,FL
+447,Sunnyvale,140081,CA
+119,Alexandria,139966,VA
+263,Mesquite,139824,TX
+109,Hampton,137436,VA
+388,Pasadena,137122,CA
+412,Orange,136416,CA
+148,Savannah,136286,GA
+130,Cary,135234,NC
+416,Fullerton,135161,CA
+156,Warren,134056,MI
+201,Clarksville,132929,TN
+265,McKinney,131117,TX
+1,McAllen,129877,TX
+102,New Haven,129779,CT
+157,Sterling Heights,129699,MI
+354,West Valley City,129480,UT
+147,Columbia,129272,SC
+8,Killeen,127921,TX
+260,Topeka,127473,KS
+371,Thousand Oaks,126683,CA
+235,Cedar Rapids,126326,IA
+255,Olathe,125872,KS
+92,Elizabeth,124969,NJ
+277,Waco,124805,TX
+71,Hartford,124775,CT
+377,Visalia,124442,CA
+31,Gainesville,124354,FL
+372,Simi Valley,124237,CA
+99,Stamford,122643,CT
+470,Bellevue,122363,WA
+436,Concord,122067,CA
+48,Miramar,122041,FL
+60,Coral Springs,121096,FL
+23,Lafayette,120623,LA
+135,Charleston,120083,SC
+284,Carrollton,119097,TX
+454,Roseville,118788,CA
+305,Thornton,118772,CO
+21,Beaumont,118296,TX
+106,Allentown,118032,PA
+362,Surprise,117517,AZ
+194,Evansville,117429,IN
+288,Abilene,117063,TX
+269,Frisco,116989,TX
+248,Independence,116830,MO
+448,Santa Clara,116468,CA
+232,Springfield,116250,IL
+429,Vallejo,115942,CA
+317,Victorville,115903,CA
+163,Athens,115452,GA
+231,Peoria,115007,IL
+181,Lansing,114297,MI
+172,Ann Arbor,113934,MI
+403,El Monte,113475,CA
+281,Denton,113383,TX
+433,Berkeley,112580,CA
+309,Provo,112488,UT
+404,Downey,111772,CA
+287,Midland,111147,TX
+275,Norman,110925,OK
+97,Waterbury,110366,CT
+417,Costa Mesa,109960,CA
+385,Inglewood,109673,CA
+64,Manchester,109565,NH
+202,Murfreesboro,108755,TN
+242,Columbia,108500,MO
+217,Elgin,108188,IL
+36,Clearwater,107685,FL
+51,Miami Gardens,107167,FL
+492,Rochester,106769,MN
+307,Pueblo,106595,CO
+62,Lowell,106519,MA
+123,Wilmington,106476,NC
+302,Arvada,106433,CO
+369,San Buenaventura (Ventura),106433,CA
+306,Westminster,106114,CO
+407,West Covina,106098,CA
+476,Gresham,105594,OR
+392,Norwalk,105549,CA
+487,Fargo,105549,ND
+346,Carlsbad,105328,CA
+431,Fairfield,105321,CA
+68,Cambridge,105162,MA
+289,Wichita Falls,104553,TX
+139,High Point,104371,NC
+486,Billings,104170,MT
+496,Green Bay,104057,WI
+355,West Jordan,103712,UT
+432,Richmond,103701,CA
+335,Murrieta,103466,CA
+387,Burbank,103340,CA
+41,Palm Bay,103190,FL
+482,Everett,103019,WA
+164,Flint,102434,MI
+459,Antioch,102372,CA
+143,Erie,101786,PA
+207,South Bend,101168,IN
+440,Daly City,101123,CA
+295,Centennial,100377,CO
+347,Temecula,100097,CA
+293,Odessa,99940,TX
+55,West Palm Beach,99919,FL
+6,Round Rock,99887,TX
+61,Pompano Beach,99845,FL
+237,Davenport,99685,IA
+375,Santa Maria,99553,CA
+325,El Cajon,99478,CA
+266,Richardson,99223,TX
+212,Kenosha,99218,WI
+337,Rialto,99171,CA
+261,Broken Arrow,98850,OK
+174,Dearborn,98153,MI
+84,Albany,97856,NY
+314,Las Cruces,97618,NM
+136,North Charleston,97471,SC
+39,Lakeland,97422,FL
+304,Boulder,97385,CO
+439,San Mateo,97207,CA
+140,Roanoke,97032,VA
+165,Livonia,96942,MI
+256,Tyler,96900,TX
+290,Lawton,96867,OK
+399,Compton,96455,CA
+376,Clovis,95631,CA
+110,Portsmouth,95535,VA
+283,Lewisville,95290,TX
+81,New Bedford,95072,MA
+402,South Gate,94396,CA
+11,College Station,93857,TX
+177,Sandy Springs,93853,GA
+343,Vista,93834,CA
+78,Brockton,93810,MA
+330,Mission Viejo,93305,CA
+10,San Angelo,93200,TX
+361,Yuma,93064,AZ
+301,Greeley,92889,CO
+430,Vacaville,92428,CA
+472,Kent,92411,WA
+77,Quincy,92271,MA
+49,Davie,91992,FL
+400,Carson,91714,CA
+474,Hillsboro,91611,OR
+247,Lee's Summit,91364,MO
+161,Macon,91351,GA
+15,Pearland,91252,TX
+479,Yakima,91067,WA
+471,Renton,90927,WA
+197,Tuscaloosa,90468,AL
+65,Lynn,90329,MA
+423,Sparks,90264,NV
+318,Hesperia,90173,CA
+426,Redding,89861,CA
+475,Beaverton,89803,OR
+484,Spokane Valley,89755,WA
+374,Santa Monica,89736,CA
+389,Westminster,89701,CA
+467,Federal Way,89306,WA
+211,Waukegan,89078,IL
+82,Fall River,88857,MA
+379,Santa Barbara,88410,CA
+178,Roswell,88346,GA
+310,Orem,88328,UT
+114,Reading,88082,PA
+52,Miami Beach,87779,FL
+253,Lawrence,87643,KS
+315,Rio Rancho,87521,NM
+353,Sandy,87461,UT
+63,Nashua,86494,NH
+303,Longmont,86270,CO
+494,Duluth,86265,MN
+244,Fort Smith,86209,AR
+462,Chico,86187,CA
+100,Norwalk,85603,CT
+401,Whittier,85331,CA
+413,Newport Beach,85186,CA
+33,Deltona,85182,FL
+80,Newton,85146,MA
+44,Plantation,84955,FL
+445,San Leandro,84950,CA
+103,Trenton,84913,NJ
+117,Suffolk,84585,VA
+124,Greenville,84554,NC
+54,Sunrise,84439,FL
+46,Boca Raton,84392,FL
+398,Hawthorne,84293,CA
+270,Allen,84246,TX
+88,Clifton,84136,NJ
+173,Westland,84094,MI
+215,Cicero,83891,IL
+344,San Marcos,83781,CA
+17,League City,83560,TX
+154,Asheville,83393,NC
+456,Citrus Heights,83301,CA
+405,Alhambra,83089,CA
+453,Tracy,82922,CA
+491,Bloomington,82893,MN
+350,Ogden,82825,UT
+271,Sioux City,82684,IA
+73,Warwick,82672,RI
+196,Hoover,81619,AL
+149,Parma,81601,OH
+366,Nampa,81557,ID
+274,Edmond,81405,OK
+224,Champaign,81055,IL
+169,Troy,80980,MI
+461,Livermore,80968,CA
+98,Danbury,80893,CT
+466,Bellingham,80885,WA
+205,Hammond,80830,IN
+391,Buena Park,80530,CA
+257,Longview,80455,TX
+203,Bloomington,80405,IN
+76,Cranston,80387,RI
+206,Gary,80294,IN
+394,Lakewood,80048,CA
+166,Farmington Hills,79740,MI
+238,O'Fallon,79329,MO
+189,Carmel,79191,IN
+137,Concord,79066,NC
+421,Merced,78958,CA
+208,Racine,78860,WI
+14,Sugar Land,78817,TX
+323,Hemet,78657,CA
+329,Chino,77983,CA
+35,Largo,77648,FL
+333,Menifee,77519,CA
+159,Albany,77434,GA
+104,Camden,77344,NJ
+331,Lake Forest,77264,CA
+2,Edinburg,77100,TX
+94,New Rochelle,77062,NY
+4,Mission,77058,TX
+427,Napa,76915,CA
+443,Redwood City,76815,CA
+188,Fishers,76794,IN
+250,St. Joseph,76780,MO
+176,Johns Creek,76728,GA
+465,Bend,76639,OR
+395,Bellflower,76616,CA
+228,Bloomington,76610,IL
+66,Lawrence,76377,MA
+363,Avondale,76238,AZ
+12,Bryan,76201,TX
+227,Decatur,76122,IL
+115,Scranton,76089,PA
+42,Melbourne,76068,FL
+349,Indio,76036,CA
+489,Brooklyn Park,75781,MN
+67,Somerville,75754,MA
+132,Lynchburg,75568,VA
+410,Tustin,75540,CA
+409,Baldwin Park,75390,CA
+32,Palm Coast,75180,FL
+220,Arlington Heights,75101,IL
+367,Meridian,75092,ID
+59,Deerfield Beach,75018,FL
+107,Bethlehem,74982,PA
+425,Medford,74907,OR
+406,Chino Hills,74799,CA
+221,Evanston,74486,IL
+191,Kalamazoo,74262,MI
+218,Schaumburg,74227,IL
+442,Mountain View,74066,CA
+480,Kennewick,73917,WA
+434,Alameda,73812,CA
+327,Upland,73732,CA
+245,Fayetteville,73580,AR
+222,Bolingbrook,73366,IL
+101,New Britain,73206,CT
+152,Canton,73007,OH
+352,St. George,72897,UT
+493,Appleton,72623,WI
+422,Folsom,72203,CA
+438,San Ramon,72148,CA
+186,Wyoming,72125,MI
+22,Lake Charles,71993,LA
+19,Baytown,71802,TX
+144,Gastonia,71741,NC
+170,Southfield,71739,MI
+75,Pawtucket,71148,RI
+167,Rochester Hills,70995,MI
+116,Wilmington,70851,DE
+209,Waukesha,70718,WI
+490,Plymouth,70576,MN
+0,Pharr,70400,TX
+458,Pleasanton,70285,CA
+473,Auburn,70180,WA
+122,Jacksonville,70145,NC
+192,Muncie,70085,IN
+246,Springdale,69797,AR
+86,Passaic,69781,NJ
+383,Lynwood,69772,CA
+444,Union City,69516,CA
+319,Apple Valley,69135,CA
+338,Redlands,68747,CA
+219,Palatine,68557,IL
+420,Turlock,68549,CA
+241,Waterloo,68406,IA
+334,Perris,68386,CA
+56,Boynton Beach,68217,FL
+483,Rapid City,67956,SD
+292,Santa Fe,67947,NM
+236,Iowa City,67862,IA
+127,Mount Pleasant,67843,SC
+27,Gulfport,67793,MS
+16,Missouri City,67358,TX
+351,Layton,67311,UT
+95,Mount Vernon,67292,NY
+234,Jonesboro,67263,AR
+204,Lafayette,67140,IN
+451,Manteca,67096,CA
+142,Youngstown,66982,OH
+57,Lauderhill,66887,FL
+299,Loveland,66859,CO
+457,Milpitas,66790,CA
+485,Missoula,66788,MT
+397,Redondo Beach,66748,CA
+25,Kenner,66702,LA
+162,Warner Robins,66588,GA
+85,Union City,66455,NJ
+69,Portland,66194,ME
+146,Rock Hill,66154,SC
+83,Schenectady,66135,NY
+297,Cheyenne,59466,WY
+153,Charleston,51400,WV
+497,Burlington,42417,VT
