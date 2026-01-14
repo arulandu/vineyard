@@ -1,0 +1,22 @@
+[project]
+name = "vineyard"
+version = "0.1.0"
+description = "An implementation of vineyard distance, a measure of topological dissimilarity"
+readme = "README.md"
+requires-python = "==3.12.*"
+dependencies = [
+    "geopandas>=1.1.2",
+    "gerrychain>=0.3.2",
+    "gudhi>=3.11.0",
+    "ipykernel>=7.1.0",
+    "matplotlib>=3.10.8",
+    "multiprocess>=0.70.18",
+    "numpy>=2.2.6",
+    "pandas>=2.3.3",
+    "plotly>=6.5.0",
+    "pot>=0.9.6.post1",
+    "requests>=2.32.5",
+    "scikit-learn>=1.8.0",
+    "scipy>=1.15.3",
+    "tqdm>=4.67.1",
+]

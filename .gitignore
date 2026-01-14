@@ -4,3 +4,4 @@ __pycache__
 *.npy
 *.pth
 iframe_figures
+.DS_Store
